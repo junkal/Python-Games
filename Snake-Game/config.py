@@ -20,3 +20,4 @@ MOVE_DELAY_START = 150  # Initial delay in ms
 MOVE_DELAY_MIN = 60     # Fastest delay allowed
 SPEED_UP_EVERY = 50     # Speed up every X points
 DELAY_STEP = 10         # How much delay decreases each step
+LEVEL_UP_EVERY = SPEED_UP_EVERY 
