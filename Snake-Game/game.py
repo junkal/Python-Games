@@ -9,8 +9,8 @@ from game_controller import GameController
 
 class Game:
     def __init__(self):
+        pygame.mixer.init()
         pygame.init()
-        self.screen = pygame.display.set_mode((config.WINDOW_WIDTH, config.WINDOW_HEIGHT + config.HEADER_HEIGHT))
         pygame.display.set_caption("Snake Game")
 
         self.menu_font = pygame.font.SysFont(None, config.MENU_FONT_SIZE)
@@ -25,11 +25,11 @@ class Game:
         self.food.reset(self.snake.body)
 
         self.sounds = {
-            "eat": pygame.mixer.Sound("assets/sounds/eat.mp3"),
-            "game_over": pygame.mixer.Sound("assets/sounds/game_over.mp3"),
-            "start": pygame.mixer.Sound("assets/sounds/start.mp3"),
+            "eat": pygame.mixer.Sound("assets/sounds/eat.ogg"),
+            "game_over": pygame.mixer.Sound("assets/sounds/game_over.ogg"),
+            "start": pygame.mixer.Sound("assets/sounds/start.ogg"),
         }
-
+        self.screen = pygame.display.set_mode((config.WINDOW_WIDTH, config.WINDOW_HEIGHT + config.HEADER_HEIGHT))
         self.score = 0
         self.state = GameState.MENU
         self.last_move_time = pygame.time.get_ticks()
