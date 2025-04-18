@@ -9,3 +9,6 @@
 
     <img width="802" alt="Space Invader" src="https://github.com/user-attachments/assets/943574fb-f474-433b-8316-1fc924c9f8e7" />
 
+3. Flappy Bird
+   
+    <img width="797" alt="Flappy Bird" src="https://github.com/user-attachments/assets/ea4b9065-e132-4f43-80b0-b03be846b1e6" />
